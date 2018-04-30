@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-board-detail',
+  selector: 'detail',
   templateUrl: './board-detail.component.html',
   styleUrls: ['./board-detail.component.css']
 })
