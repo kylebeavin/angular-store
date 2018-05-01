@@ -1,6 +1,6 @@
-<table class="table">
-  <thead class="table">
-    <tr class="table">
+<table class="table" >
+  <thead class="table" >
+    <tr class="table" >
       <th class="table">id</th>
       <th class="table">name</th>
       <th class="table">upc</th>
@@ -10,9 +10,9 @@
       <th class="table">in stock</th>
     </tr>
   </thead>
-  <tbody class="table">
-    <tr class="table" *ngFor="let board of boards">
-      <td class="table">{{board.id}}</td>
+  <tbody class="table" >
+    <tr *ngFor="let board of boards" (click)="onSelect(board)">
+      <td class="table" >{{board.id}} </td>
       <td class="table">{{board.name}}</td>
       <td class="table">{{board.upc}}</td>
       <td class="table">{{board.description}}</td>
@@ -22,3 +22,4 @@
     </tr>
   </tbody>
 </table>
+<detail [boards]="selectedBoards"></detail>

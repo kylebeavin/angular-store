@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BoardsComponent } from './boards/boards.component';
-import { BoardDetailComponent } from './board-detail/board-detail.component';
+import { BoardDetailComponent } from './boards/board-detail/board-detail.component';
+import { BoardService } from './board.service';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { BoardDetailComponent } from './board-detail/board-detail.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    BoardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

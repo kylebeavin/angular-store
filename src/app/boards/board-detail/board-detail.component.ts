@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Boards } from '../boards';
 
 @Component({
   selector: 'detail',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./board-detail.component.css']
 })
 export class BoardDetailComponent implements OnInit {
+  @Input() boards: Boards;
 
   constructor() { }
 

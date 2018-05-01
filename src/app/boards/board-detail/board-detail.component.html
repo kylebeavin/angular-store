@@ -1,3 +1,5 @@
-<p>
-  board-detail works!
-</p>
+<div *ngIf="boards">
+
+  <h2>{{ boards.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{boards.id}}</div>
+</div>
